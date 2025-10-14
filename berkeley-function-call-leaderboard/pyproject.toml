@@ -44,6 +44,8 @@ dependencies = [
     "html2text",
     "rank_bm25==0.2.2",
     "google-search-results",
+    "sentence-transformers>=2.7.0",
+    "faiss-cpu==1.11.0",
     "networkx==3.3"
 ]
 
@@ -72,10 +74,6 @@ Repository = "https://github.com/ShishirPatil/gorilla/tree/main/berkeley-functio
 oss_eval_vllm = ["vllm==0.8.5"]
 oss_eval_sglang = ["sglang[all]"]
 wandb = ["wandb==0.18.5"]
-semantic_search = [
-    "sentence-transformers>=2.7.0",
-    "faiss-cpu==1.11.0",
-]
 
 [tool.setuptools_scm]
 tag_regex = '^v(?P<version>[0-9]{4}\.[0-9]{2}\.[0-9]{2}(?:\.[0-9]+)?)$'
